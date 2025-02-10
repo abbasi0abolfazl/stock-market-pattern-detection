@@ -12,16 +12,6 @@ This project is designed to detect stock market patterns (e.g., candlestick patt
 
 ## Requirements
 
-To run this project, you need the following Python libraries:
-
-- `pandas`
-- `matplotlib`
-- `mplfinance`
-- `ultralyticsplus`
-- `opencv-python`
-- `glob`
-- `os`
-
 You can install the required libraries using the following command:
 
 ```bash
@@ -82,13 +72,13 @@ Example dataset format:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/stock-market-pattern-detection.git
+   git clone https://github.com/abbasi0abolfazl/stock-market-pattern-detection.git
    cd stock-market-pattern-detection
    ```
 
 2. Place your dataset (CSV file) in the project directory.
 
-3. Run the script:
+3. Run the script or **pattern_detection.ipynb**:
 
    ```bash
    python main.py
@@ -118,11 +108,21 @@ You can also run this project directly on Google Colab:
 - **Model Parameters**: Adjust the YOLOv8 model parameters (e.g., confidence threshold, IoU threshold) in the `main` function.
 - **Input Data**: Update the `file_path` variable in the `load_and_preprocess_data` function to point to your dataset.
 
+## Example Output
+
+### Generated Candlestick Chart
+![Candlestick Chart](./images/candlestick_chart_500_2024-12-26%2002_35_to_2024-12-26%2004_30.png)
+
+### Detected Pattern
+![Detected Pattern](./detected_patterns/detected_candlestick_chart_500_2024-12-27%2003_45_to_2024-12-27%2009_40.png)
+
+
 ## Directory Structure
 
 ```
 stock-market-pattern-detection/
 ├── main.py                                     # Main script
+├── pattern_detection.ipynb                     # ipython script
 ├── README.md                                   # Project documentation
 ├── XAUUSD_M5.csv                               # Example dataset
 ├── images/                                     # Generated candlestick charts

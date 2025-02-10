@@ -1,11 +1,9 @@
 import os
 import glob
 import pandas as pd
-import matplotlib.pyplot as plt
 import mplfinance as mpf
 from ultralyticsplus import YOLO
 import cv2
-import numpy as np
 
 # Load and preprocess data
 def load_and_preprocess_data(file_path, num_records=500):
